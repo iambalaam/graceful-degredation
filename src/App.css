@@ -1,3 +1,17 @@
+h2 {
+  font-size: 200px;
+}
+
+
+header {
+ text-align: left;
+}
+
+header a {
+ font-size: 40px;
+ padding: 20px;
+}
+
 .App {
   text-align: center;
 }
