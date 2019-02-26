@@ -9,6 +9,8 @@ const Home = () => <h2>🏡</h2>
 const gracefullyDegrade = (e:
   React.MouseEvent<HTMLAnchorElement> |
   React.FormEvent<HTMLFormElement>) => {
+  if (!e.defaultPrevented) return;
+
   const target = e.nativeEvent.target;
 
   if (target instanceof HTMLAnchorElement && target.href) {
